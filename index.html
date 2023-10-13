@@ -5,6 +5,7 @@
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet">
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
+<link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.10.2/katex.min.css" rel="stylesheet">
 <script src="/js/color.global.min.js" ></script>
 <script src="/js/load-settings.js" ></script>
 <head>
@@ -274,7 +275,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            1.2k 词 
+            1.4k 词 
           </div>
         </div>
         
@@ -285,16 +286,22 @@
         
           <div class="truncate-text">
             
-              Comparison of Pearson and Spearman coefficients
+               Comparison of Pearson and Spearman coefficients
+
 Comparison of Pearson and Spearman coefficients
+
 Pearson coefficients
 Spearman coefficients
 Comparsion of Pearson and Spearman coefficients
 
 
 
-Pearson coefficientsPearson correlation cofficient是两个变量之间的协方差（covariance）除以两者标准差的乘积，它假定变量的分布是正态分布$$\rho_{X,Y} &#x3D; \frac{cov(X,Y)}{\sigma(X)\sigma(Y)}$$$$cov(X,Y) &#x3D; E\left[ (X-E\left[X\right])(Y-E\left[Y\right]) \right]$$$$\rho &#x3D; \sqrt{E\left[(X-E\left[X\right])^2\right]}$$
-Spearman coefficient...
+ Pearson coefficients
+Pearson correlation cofficient是两个变量之间的协方差（covariance）除以两者标准差的乘积，它假定变量的分布是正态分布
+ρX,Y=cov(X,Y)σ(X)σ(Y)\rho_{X,Y} = \frac{cov(X,Y)}{\sigma(X)\sigma(Y)}
+ρX,Y​=σ(X)σ(Y)cov(X,Y)​
+cov(X,Y)=E[(X−E[X])(Y−E[Y])]cov(X,Y) = E\left[ (X-E\left[X\right])(Y-E\left[Y\right]) \right]
+cov(X,Y)=E[(X−E[...
             
           </div>
         
@@ -365,10 +372,13 @@ Spearman coefficient...
         
           <div class="truncate-text">
             
-              Hexo博客中插入图片在Hexo中插入图片需要将图片放置在_posts/目录下对应的post目录中
-方法一：1&#123;% asset_img image.png Kawaii Maya!! %&#125;
+               Hexo博客中插入图片
+在Hexo中插入图片需要将图片放置在_posts/目录下对应的post目录中
+ 方法一：
+1&#123;% asset_img image.png Kawaii Maya!! %&#125;
 
-方法二：修改_config.yml：
+ 方法二：
+修改_config.yml：
 1234post_asset_folder: truemarked:  prependRoot: true  postAsset: true
 实用markdown语法
 1![Maya Saiko!!](image.png)
@@ -444,8 +454,11 @@ Spearman coefficient...
         
           <div class="truncate-text">
             
-              Hexo部署Content
+               Hexo部署
+ Content
+
 Hexo部署
+
 Content
 Installation
 Initialize Project
@@ -455,9 +468,12 @@ Reference
 
 
 
-Installation1234# Installationnpm install -g hexo-cli# Checkhexo -v
-Initialize Project1234# Inithexo init phd_blogcd phd_blognpm install
-Change Theme个人很prefer vivia这个theme，直戳XP。
+ Installation
+1234# Installationnpm install -g hexo-cli# Checkhexo -v
+ Initialize Project
+1234# Inithexo init phd_blogcd phd_blognpm install
+ Change Theme
+个人很prefer vivia这个theme，直戳XP。
 
 下载repo
 
@@ -465,7 +481,7 @@ Change Theme个人很prefer vivia这个theme，直戳XP。
 
 创建config文件
 
-将vivia目录下的example_config.vivia.ymlcopy一份到/phd_b...
+将vivia目录下的example_config.vivia.ymlco...
             
           </div>
         
@@ -536,7 +552,9 @@ Change Theme个人很prefer vivia这个theme，直戳XP。
         
           <div class="truncate-text">
             
-              Preface今天是2023年10月13日，距离开学已经过去了快一个半月，这学期专业课我一共选修了7门专业课，分别是精准医学概论、基因组技术与健康大数据、表观遗传学、生物信息学、人类遗传疾病、实用生物信息学（1）：高通量测序数据分析技术、人群队列大数据研究基础，其中一些课程的内容让我大快朵颐，让我学习到新知识的同时，填充了我先前知识的空缺，这些课程之间相互交叉重叠，也让我感受到现代生物学的发展是不同子学科之间的相得益彰。但终归需要将这些知识整理整合形成自己的知识体系，故今天在成功搭建了自己的blog后，决定开始整理自己的知识体系，基本脉络比较清晰，我将分为人类遗传学与群体遗传学、表观遗传学两个部分，人类遗传学与群体遗传学将包含精准医学概论、人类遗传疾病、人群队列大数据研究基础，表观遗传学将包含基因组技术与健康大数据和表观遗传学。虽然分为了两大块，但不免有交叉，届时再做correlation。话不多说，希望一年后这本笔记能够充分融入自己的知识体系。
+               Preface
+今天是2023年10月13日，距离开学已经过去了快一个半月，这学期专业课我一共选修了7门专业课，分别是精准医学概论、基因组技术与健康大数据、表观遗传学、生物信息学、人类遗传疾病、实用生物信息学（1）：高通量测序数据分析技术、人群队列大数据研究基础，其中一些课程的内容让我大快朵颐，让我学习到新知识的同时，填充了我先前知识的空缺，这些课程之间相互交叉重叠，也让我感受到现代生物学的发展是不同子学科之间的相得益彰。但终归需要将这些知识整理整合形成自己的知识体系，故今天在成功搭建了自己的blog后，决定开始整理自己的知识体系，基本脉络比较清晰，我将分为人类遗传学与群体遗传学、表观遗传学两个部分，人类遗传学与群体遗传学将包含精准医学概论、人类遗传疾病、人群队列大数据研究基础，表观遗传学将包含基因组技术与健康大数据和表观遗传学。虽然分为了两大块，但不免有交叉，届时再做correlation。
+话不多说，希望一年后这本笔记能够充分融入自己的知识体系。
 
             
           </div>

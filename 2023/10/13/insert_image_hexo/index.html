@@ -5,6 +5,7 @@
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet">
 <link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
+<link href="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.10.2/katex.min.css" rel="stylesheet">
 <script src="/js/color.global.min.js" ></script>
 <script src="/js/load-settings.js" ></script>
 <head>
@@ -20,12 +21,12 @@
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="Hexo博客中插入图片在Hexo中插入图片需要将图片放置在_posts&#x2F;目录下对应的post目录中 方法一：1&amp;#123;% asset_img image.png Kawaii Maya!! %&amp;#125;  方法二：修改_config.yml： 1234post_asset_folder: truemarked:  prependRoot: true  postAsset: true 实用ma">
+  <meta name="description" content="Hexo博客中插入图片 在Hexo中插入图片需要将图片放置在_posts&#x2F;目录下对应的post目录中  方法一： 1&amp;#123;% asset_img image.png Kawaii Maya!! %&amp;#125;   方法二： 修改_config.yml： 1234post_asset_folder: truemarked:  prependRoot: true  postAsset: tru">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo中插入图片">
 <meta property="og:url" content="http://example.com/2023/10/13/insert_image_hexo/index.html">
 <meta property="og:site_name" content="Jichen&#39;s Blog">
-<meta property="og:description" content="Hexo博客中插入图片在Hexo中插入图片需要将图片放置在_posts&#x2F;目录下对应的post目录中 方法一：1&amp;#123;% asset_img image.png Kawaii Maya!! %&amp;#125;  方法二：修改_config.yml： 1234post_asset_folder: truemarked:  prependRoot: true  postAsset: true 实用ma">
+<meta property="og:description" content="Hexo博客中插入图片 在Hexo中插入图片需要将图片放置在_posts&#x2F;目录下对应的post目录中  方法一： 1&amp;#123;% asset_img image.png Kawaii Maya!! %&amp;#125;   方法二： 修改_config.yml： 1234post_asset_folder: truemarked:  prependRoot: true  postAsset: tru">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2023/10/13/insert_image_hexo/image.png">
 <meta property="og:image" content="http://example.com/2023/10/13/insert_image_hexo/image.png">
@@ -290,14 +291,17 @@
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <h1 id="Hexo博客中插入图片"><a href="#Hexo博客中插入图片" class="headerlink" title="Hexo博客中插入图片"></a>Hexo博客中插入图片</h1><p>在Hexo中插入图片需要将图片放置在<code>_posts/</code>目录下对应的post目录中</p>
-<h2 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h2><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset<span class="emphasis">_img image.png Kawaii Maya!! %&#125;</span></span><br></pre></td></tr></table></figure>
+          <h1 id="hexo博客中插入图片"><a class="markdownIt-Anchor" href="#hexo博客中插入图片"></a> Hexo博客中插入图片</h1>
+<p>在Hexo中插入图片需要将图片放置在<code>_posts/</code>目录下对应的post目录中</p>
+<h2 id="方法一"><a class="markdownIt-Anchor" href="#方法一"></a> 方法一：</h2>
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset<span class="emphasis">_img image.png Kawaii Maya!! %&#125;</span></span><br></pre></td></tr></table></figure>
 <img src="/2023/10/13/insert_image_hexo/image.png" class="" title="Kawaii Maya!!">
-<h2 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h2><p>修改<code>_config.yml</code>：</p>
+<h2 id="方法二"><a class="markdownIt-Anchor" href="#方法二"></a> 方法二：</h2>
+<p>修改<code>_config.yml</code>：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">post_asset_folder:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">marked:</span></span><br><span class="line">  <span class="attr">prependRoot:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">postAsset:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>实用markdown语法</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![Maya Saiko!!](image.png)</span><br></pre></td></tr></table></figure>
-<p><img src="/2023/10/13/insert_image_hexo/image.png" alt="Maya Saiko!!"></p>
+<p><img src="image.png" alt="Maya Saiko!!" /></p>
 
         
       </div>
