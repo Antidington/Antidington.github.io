@@ -20,18 +20,20 @@
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="Hexo部署Installation1234# Installationnpm install -g hexo-cli# Checkhexo -v Initialize Project1234# Inithexo init phd_blogcd phd_blognpm install">
+  <meta name="description" content="Hexo部署Content Hexo部署 Content Installation Initialize Project Change Theme One Command Deployment Install hexo-deployer-git      Installation1234# Installationnpm install -g hexo-cli# Checkhexo -v Init">
 <meta property="og:type" content="article">
 <meta property="og:title" content="deploy_hexo">
 <meta property="og:url" content="http://example.com/2023/10/13/deploy_hexo/index.html">
 <meta property="og:site_name" content="Jichen&#39;s Blog">
-<meta property="og:description" content="Hexo部署Installation1234# Installationnpm install -g hexo-cli# Checkhexo -v Initialize Project1234# Inithexo init phd_blogcd phd_blognpm install">
+<meta property="og:description" content="Hexo部署Content Hexo部署 Content Installation Initialize Project Change Theme One Command Deployment Install hexo-deployer-git      Installation1234# Installationnpm install -g hexo-cli# Checkhexo -v Init">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/image.png">
 <meta property="article:published_time" content="2023-10-12T21:00:47.000Z">
-<meta property="article:modified_time" content="2023-10-13T05:09:38.673Z">
+<meta property="article:modified_time" content="2023-10-13T05:54:42.721Z">
 <meta property="article:author" content="Jichen Wen">
 <meta property="article:tag" content="软件使用">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image.png">
   
     <link rel="alternate" href="/atom.xml" title="Jichen's Blog" type="application/atom+xml">
   
@@ -267,7 +269,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            129 词 
+            964 词 
           </div>
         </div>
         
@@ -276,8 +278,47 @@
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <h1 id="Hexo部署"><a href="#Hexo部署" class="headerlink" title="Hexo部署"></a>Hexo部署</h1><h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Installation</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="comment"># Check</span></span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+          <h1 id="Hexo部署"><a href="#Hexo部署" class="headerlink" title="Hexo部署"></a>Hexo部署</h1><h2 id="Content"><a href="#Content" class="headerlink" title="Content"></a>Content</h2><ul>
+<li><a href="#hexo%E9%83%A8%E7%BD%B2">Hexo部署</a><ul>
+<li><a href="#content">Content</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#initialize-project">Initialize Project</a></li>
+<li><a href="#change-theme">Change Theme</a></li>
+<li><a href="#one-command-deployment">One Command Deployment</a><ul>
+<li><a href="#install-hexo-deployer-git">Install <code>hexo-deployer-git</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Installation</span></span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="comment"># Check</span></span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 <h2 id="Initialize-Project"><a href="#Initialize-Project" class="headerlink" title="Initialize Project"></a>Initialize Project</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Init</span></span><br><span class="line">hexo init phd_blog</span><br><span class="line"><span class="built_in">cd</span> phd_blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<h2 id="Change-Theme"><a href="#Change-Theme" class="headerlink" title="Change Theme"></a>Change Theme</h2><p>个人很prefer <code>vivia</code>这个theme，直戳XP。</p>
+<ol>
+<li>下载repo</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /phd_blogs</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/saicaca/hexo-theme-vivia.git themes/vivia</span><br><span class="line">npm install colorjs.io stylus hexo-symbols-count-time</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>创建<code>config</code>文件</li>
+</ol>
+<p>将<code>vivia</code>目录下的<code>example_config.vivia.yml</code>copy一份到<code>/phd_blogs</code>，重命名为<code>_config.vivia.yml</code></p>
+<ol start="3">
+<li>自定义<code>config</code></li>
+<li>设置<code>vivia</code>为Theme</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo config theme vivia</span><br></pre></td></tr></table></figure>
+<ol start="5">
+<li>创建<code>about</code>Page<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure></li>
+<li>Disable the Pagination of Archive Page</li>
+</ol>
+<p>Without this configuration, the archive page will only show up to ten articles at most.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">archive_generator:</span><br><span class="line">  per_page: 0</span><br></pre></td></tr></table></figure>
+<h2 id="One-Command-Deployment"><a href="#One-Command-Deployment" class="headerlink" title="One Command Deployment"></a>One Command Deployment</h2><h3 id="Install-hexo-deployer-git"><a href="#Install-hexo-deployer-git" class="headerlink" title="Install hexo-deployer-git"></a>Install <code>hexo-deployer-git</code></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> phd_log</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>Add following info in <code>_config.yml</code>.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: https://github.com/Antidington/Antidington.github.io</span><br><span class="line">  branch: gh-pages</span><br></pre></td></tr></table></figure>
+<p>更改repo默认<code>branch</code>为<code>gh-pages</code></p>
+<p><img src="/image.png" alt="Change default branch"><br>一键部署</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo empty &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
 
         
       </div>
