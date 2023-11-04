@@ -183,6 +183,11 @@
                 <div class="category-count">1</div>
             </a>
         
+            <a class="category-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">
+                实用工具
+                <div class="category-count">1</div>
+            </a>
+        
             <a class="category-link" href="/categories/Hexo/">
                 Hexo
                 <div class="category-count">2</div>
@@ -226,7 +231,7 @@
       
         <a class="archive-link" href="/archives/2023/11 ">
           十一月 2023 
-          <div class="archive-count">2 </div>
+          <div class="archive-count">3 </div>
         </a>
       
         <a class="archive-link" href="/archives/2023/10 ">
@@ -244,6 +249,12 @@
     <div class="widget">
       <h3 class="widget-title">最新文章</h3>
       <ul>
+        
+          <a class="recent-link" href="/2023/11/04/auto_ssh/" title="auto_ssh" >
+            <div class="recent-link-text">
+              auto_ssh
+            </div>
+          </a>
         
           <a class="recent-link" href="/2023/11/04/10yearsGWASbyBroadInstitute/" title="10yearsGWASbyBroadInstitute" >
             <div class="recent-link-text">
@@ -269,12 +280,6 @@
             </div>
           </a>
         
-          <a class="recent-link" href="/2023/10/14/CodeReplication001/" title="CAD患者scATAC-seq数据复现" >
-            <div class="recent-link-text">
-              CAD患者scATAC-seq数据复现
-            </div>
-          </a>
-        
       </ul>
     </div>
   </div>
@@ -285,6 +290,82 @@
     </div>
     <div id="content-body">
       
+   
+
+
+<article id="post-auto_ssh" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 itemprop="name">
+        <a class="p-name article-title" href="/2023/11/04/auto_ssh/">auto_ssh</a>
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-11-04T05:07:47.000Z" itemprop="datePublished">2023-11-04</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            745 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" rel="tag">软件使用</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <div class="truncate-text">
+            
+               堡垒机自动登录脚本
+ 前言
+使用组里服务器要先连接所里服务器堡垒机，再连接到组里服务器，两个密码还不一样，还都是强密码，根本记不住（大悲:(，原来一直用着Terminus集成管理，虽然有连接后执行命令的功能，但是仍无法实现一步到位连接组里服务器，后查询可使用expect脚本实现。
+ 实现
+实用expect脚本
+1234567891011121314151617181920#!/usr/bin/expectset timeout 30spawn ssh wenjichen@xxx.xxx.xxx.xxexpect &#123;	# stimulate input jump server password	&quot;(wenjichen@xxx.xxx.xxx.xx) Password:&quot;	&#123;send &quot;xxxxxxxxxx\n&quot;;exp_continue&#125;	# stimulate select server	&quot;请选择目标资产：&quot;	&#123;send &quot;2\n&quot;;exp_continue&...
+            
+          </div>
+        
+      </div>
+
+         
+    </div>
+    
+     
+    <a class="right-panel  non-pic  "
+      
+      href="/2023/11/04/auto_ssh/" 
+    >
+       
+      <i class="fa-solid fa-angle-right non-pic"></i>
+       
+    </a>
+     
+  </div>
+  
+</article>
+
+
+
+
+
    
 
 
@@ -996,104 +1077,6 @@ cov(X,Y)=E[(X−E[...
     <a class="right-panel  non-pic  "
       
       href="/2023/10/13/insert_image_hexo/" 
-    >
-       
-      <i class="fa-solid fa-angle-right non-pic"></i>
-       
-    </a>
-     
-  </div>
-  
-</article>
-
-
-
-
-
-   
-
-
-<article id="post-deploy_hexo" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-   
-  <div class="article-inner">
-    <div class="article-main">
-      <header class="article-header">
-        
-<div class="main-title-bar">
-  <div class="main-title-dot"></div>
-  
-    
-      <h1 itemprop="name">
-        <a class="p-name article-title" href="/2023/10/13/deploy_hexo/">部署Hexo</a>
-      </h1>
-    
-  
-</div>
-
-        <div class='meta-info-bar'>
-          <div class="meta-info">
-  <time class="dt-published" datetime="2023-10-12T21:00:47.000Z" itemprop="datePublished">2023-10-13</time>
-</div>
-          <div class="need-seperator meta-info">
-            <div class="meta-cate-flex">
-  
-  <a class="meta-cate-link" href="/categories/Hexo/">Hexo</a>
-   
-</div>
-  
-          </div>
-          <div class="wordcount need-seperator meta-info">
-            1.2k 词 
-          </div>
-        </div>
-        
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" rel="tag">软件使用</a></li></ul>
-
-      </header>
-      <div class="e-content article-entry" itemprop="articleBody">
-        
-          <div class="truncate-text">
-            
-               Hexo部署
- Content
-
-Hexo部署
-
-Content
-Installation
-Initialize Project
-Change Theme
-One Command Deployment
-Reference
-
-
-
- Installation
-1234# Installationnpm install -g hexo-cli# Checkhexo -v
- Initialize Project
-1234# Inithexo init phd_blogcd phd_blognpm install
- Change Theme
-个人很prefer vivia这个theme，直戳XP。
-
-下载repo
-
-123cd /phd_blogsgit clone https://github.com/saicaca/hexo-theme-vivia.git themes/vivianpm install colorjs.io stylus hexo-symbols-count-time
-
-创建config文件
-
-将vivia目录下的example_config.vivia.ymlco...
-            
-          </div>
-        
-      </div>
-
-         
-    </div>
-    
-     
-    <a class="right-panel  non-pic  "
-      
-      href="/2023/10/13/deploy_hexo/" 
     >
        
       <i class="fa-solid fa-angle-right non-pic"></i>
