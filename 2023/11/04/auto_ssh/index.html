@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/2023/11/04/auto_ssh/16991032261062.jpg">
 <meta property="article:published_time" content="2023-11-04T05:07:47.000Z">
-<meta property="article:modified_time" content="2023-11-04T13:13:13.221Z">
+<meta property="article:modified_time" content="2023-11-07T11:26:31.433Z">
 <meta property="article:author" content="Jichen Wen">
 <meta property="article:tag" content="软件使用">
 <meta name="twitter:card" content="summary">
@@ -163,6 +163,11 @@
     <div class="widget">
       <h3 class="widget-title">分类</h3>
       <div class="category-box">
+            <a class="category-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">
+                实用工具
+                <div class="category-count">2</div>
+            </a>
+        
             <a class="category-link" href="/categories/Journal-Club/">
                 Journal Club
                 <div class="category-count">2</div>
@@ -178,19 +183,19 @@
                 <div class="category-count">1</div>
             </a>
         </div></div>
-            <a class="category-link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">
-                实用工具
-                <div class="category-count">2</div>
+            <a class="category-link" href="/categories/Globus%E5%A5%97%E4%BB%B6/">
+                Globus套件
+                <div class="category-count">1</div>
+            </a>
+        
+            <a class="category-link" href="/categories/Code-Replication/">
+                Code Replication
+                <div class="category-count">1</div>
             </a>
         
             <a class="category-link" href="/categories/Hexo/">
                 Hexo
                 <div class="category-count">2</div>
-            </a>
-        
-            <a class="category-link" href="/categories/Globus%E5%A5%97%E4%BB%B6/">
-                Globus套件
-                <div class="category-count">1</div>
             </a>
         
             <a class="category-link" href="/categories/Statistics/">
@@ -200,11 +205,6 @@
         
             <a class="category-link" href="/categories/Biotools/">
                 Biotools
-                <div class="category-count">1</div>
-            </a>
-        
-            <a class="category-link" href="/categories/Code-Replication/">
-                Code Replication
                 <div class="category-count">1</div>
             </a>
         
@@ -329,7 +329,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            745 词 
+            866 词 
           </div>
         </div>
         
@@ -344,9 +344,12 @@
 <h2 id="实现"><a class="markdownIt-Anchor" href="#实现"></a> 实现</h2>
 <p>实用expect脚本</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/expect</span></span><br><span class="line"><span class="built_in">set</span> <span class="built_in">timeout</span> 30</span><br><span class="line"></span><br><span class="line">spawn ssh wenjichen@xxx.xxx.xxx.xx</span><br><span class="line"></span><br><span class="line">expect &#123;</span><br><span class="line">	<span class="comment"># stimulate input jump server password</span></span><br><span class="line">	<span class="string">&quot;(wenjichen@xxx.xxx.xxx.xx) Password:&quot;</span></span><br><span class="line">	&#123;send <span class="string">&quot;xxxxxxxxxx\n&quot;</span>;exp_continue&#125;</span><br><span class="line">	<span class="comment"># stimulate select server</span></span><br><span class="line">	<span class="string">&quot;请选择目标资产：&quot;</span></span><br><span class="line">	&#123;send <span class="string">&quot;2\n&quot;</span>;exp_continue&#125;</span><br><span class="line">	<span class="comment"># stimulate select user</span></span><br><span class="line">	<span class="string">&quot;login:&quot;</span></span><br><span class="line">	&#123;send <span class="string">&quot;wenjichen\n&quot;</span>;exp_continue&#125;</span><br><span class="line">	<span class="comment"># stimulate input selected user password</span></span><br><span class="line">	<span class="string">&quot;wenjichen@xxx.xxx.xxx.xx&#x27;s password:&quot;</span></span><br><span class="line">	&#123;send <span class="string">&quot;xxxxxxxxxxxx\n&quot;</span>&#125;</span><br><span class="line">&#125;</span><br><span class="line">interact</span><br></pre></td></tr></table></figure>
-<p>随后在执行即可（<s>大喜:)</s></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 755 login.sh; ./login.sh</span><br></pre></td></tr></table></figure>
-<p><img src="16991032261062.jpg" alt="" /></p>
+<p>随后移动至环境变量下，只有使用shell脚本调用才不会影响rz、sz的使用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="built_in">mv</span> login_matster.sh /Users/local/bin</span><br></pre></td></tr></table></figure>
+<p>shell脚本内容为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> LC_CTYPE=en_US</span><br><span class="line">/usr/local/bin/login_master.s</span><br></pre></td></tr></table></figure>
+<p>随后在执行即可（<s>大喜:)</s><br />
+<img src="16991032261062.jpg" alt="" /></p>
 
         
       </div>
