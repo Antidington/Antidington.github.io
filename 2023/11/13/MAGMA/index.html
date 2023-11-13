@@ -15,21 +15,29 @@
   
 
   
-  <title>归档: 2023/10 | Jichen&#39;s Blog</title>
+  <title>MAGMA | Jichen&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="Jichen Wen Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Jichen&#39;s Blog">
-<meta property="og:url" content="http://example.com/archives/2023/10/index.html">
+  <meta name="description" content="MAGMA  简介 MAGMA is a tool for gene analysis and generalized gene-set analysis of GWAS data. It can be used to analyse both raw genotype data as well as summary SNP p-values from a previous GWAS or me">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MAGMA">
+<meta property="og:url" content="http://example.com/2023/11/13/MAGMA/index.html">
 <meta property="og:site_name" content="Jichen&#39;s Blog">
-<meta property="og:description" content="Jichen Wen Blog">
+<meta property="og:description" content="MAGMA  简介 MAGMA is a tool for gene analysis and generalized gene-set analysis of GWAS data. It can be used to analyse both raw genotype data as well as summary SNP p-values from a previous GWAS or me">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2023/11/13/MAGMA/16998486981184.jpg">
+<meta property="og:image" content="http://example.com/2023/11/13/MAGMA/16998546777699.jpg">
+<meta property="og:image" content="http://example.com/2023/11/13/MAGMA/16998553171104.jpg">
+<meta property="og:image" content="http://example.com/2023/11/13/MAGMA/16998556778767.jpg">
+<meta property="article:published_time" content="2023-11-12T22:36:00.000Z">
+<meta property="article:modified_time" content="2023-11-13T06:38:38.905Z">
 <meta property="article:author" content="Jichen Wen">
+<meta property="article:tag" content="课题相关">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2023/11/13/MAGMA/16998486981184.jpg">
   
     <link rel="alternate" href="/atom.xml" title="Jichen's Blog" type="application/atom+xml">
   
@@ -296,196 +304,133 @@
     <div id="content-body">
        
 
-<div class="archive-main-card">
-    <div class="archive-top">
-      <div class="main-title-bar">
-        <div class="main-title-dot"></div>
-        <h1 class="article-title">归档</h1>
-      </div>    
+
+<article id="post-MAGMA" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        MAGMA
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2023-11-12T22:36:00.000Z" itemprop="datePublished">2023-11-13</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/post-GWAS/">post-GWAS</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            1.5k 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%BE%E9%A2%98%E7%9B%B8%E5%85%B3/" rel="tag">课题相关</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <h1 id="magma"><a class="markdownIt-Anchor" href="#magma"></a> MAGMA</h1>
+<h2 id="简介"><a class="markdownIt-Anchor" href="#简介"></a> 简介</h2>
+<p>MAGMA is a tool for gene analysis and generalized gene-set analysis of GWAS data. It can be used to analyse both raw genotype data as well as summary SNP p-values from a previous GWAS or meta-analysis.</p>
+<h2 id="原理"><a class="markdownIt-Anchor" href="#原理"></a> 原理</h2>
+<p><s>待施工</s></p>
+<h2 id="安装"><a class="markdownIt-Anchor" href="#安装"></a> 安装</h2>
+<p>官网提供了如下版本<br />
+<img src="16998486981184.jpg" alt="" /><br />
+即开即用</p>
+<h2 id="使用"><a class="markdownIt-Anchor" href="#使用"></a> 使用</h2>
+<h3 id="示例数据"><a class="markdownIt-Anchor" href="#示例数据"></a> 示例数据</h3>
+<ol>
+<li>GWAS数据：<a target="_blank" rel="noopener" href="https://my.locuszoom.org/gwas/236887/">BMI meta analysis的一套数据</a>，样本量为339224</li>
+<li>基因坐标：<a target="_blank" rel="noopener" href="https://ctg.cncr.nl/software/MAGMA/aux_files/NCBI37.3.zip">Gene locations, build 37</a></li>
+<li>1KG：<a target="_blank" rel="noopener" href="https://ctg.cncr.nl/software/MAGMA/ref_data/g1000_eur.zip">European</a></li>
+<li>通路文件：<a target="_blank" rel="noopener" href="https://www.gsea-msigdb.org/gsea/msigdb/download_file.jsp?filePath=/msigdb/release/7.4/msigdb.v7.4.entrez.gmt">msigdb.v7.4</a></li>
+</ol>
+<h3 id="01-annotation"><a class="markdownIt-Anchor" href="#01-annotation"></a> 01 Annotation</h3>
+<p>需要提供对下载得到的GWAS summary statistics进行预处理，得到<code>snp.loc</code>文件，<code>\t</code>分割，分别为<code>rsID chrosome postion</code>，不需要列名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> gwas.tsv | \ </span><br><span class="line">awk -F<span class="string">&#x27;\t&#x27;</span> <span class="string">&#x27;$3 != &quot;.&quot;&#x27;</span> | \ </span><br><span class="line">awk -F<span class="string">&#x27;\t&#x27;</span> <span class="string">&#x27;&#123; print $3&quot;\t&quot;$1&quot;\t&quot;$2&#125;&#x27;</span> &gt; snp.loc</span><br></pre></td></tr></table></figure>
+<p>执行注释</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">./magma_v1.10_mac/magma --annotate \ </span><br><span class="line">--snp-loc snp.loc \ </span><br><span class="line">--gene-loc ./NCBI37.3/NCBI37.3.gene.loc \ </span><br><span class="line">--out 01_annotation_step</span><br></pre></td></tr></table></figure>
+<p>得到<code>.genes.annot</code>文件储存了单个基因范围之内的SNP，其中第一列为基因的index，与<code>.gene.loc</code>一致，第二、三列为基因的坐标范围，其后为则为该范围内的SNP<br />
+<img src="16998546777699.jpg" alt="" /></p>
+<h3 id="02-gene-analysis"><a class="markdownIt-Anchor" href="#02-gene-analysis"></a> 02 Gene analysis</h3>
+<p>有两种模式，一种基于raw GWAS data，另一种基于SNP p-value，这里使用后者。<br />
+首先需要对GWAS summary statistics中的-log值进行转换：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> gwas.tsv | \ </span><br><span class="line">awk -F<span class="string">&#x27;\t&#x27;</span> <span class="string">&#x27;$3 != &quot;.&quot;&#x27;</span> |  \ </span><br><span class="line">awk -F<span class="string">&#x27;\t&#x27;</span> <span class="string">&#x27;&#123;print $3&quot;\t&quot;exp(-$6)&#125;&#x27;</span> &gt; pvalue.tsv</span><br></pre></td></tr></table></figure>
+<p>执行关联分析</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">./magma_v1.10_mac/magma --bfile ./g1000_eur/g1000_eur \ </span><br><span class="line">--pval pvalue.tsv N=339224 \ </span><br><span class="line">--gene-annot 01_annotation_step.genes.annot \ </span><br><span class="line">--out 02_gene_analysis</span><br></pre></td></tr></table></figure>
+<p><code>bfile</code>可以使用原始数据或者是LD参考面板。<br />
+输出的<code>.out</code>储存了关联分析结果，也就是基因与表型的相关性:<br />
+<img src="16998553171104.jpg" alt="" /><br />
+输出的<code>.raw</code>文件作为下一步的输入。</p>
+<h3 id="03-gene-set-analysis"><a class="markdownIt-Anchor" href="#03-gene-set-analysis"></a> 03 Gene-set analysis</h3>
+<p>这一步对显著的基因是否富集于某个基因集或通路进行检验，得到通路与表型的相关性。这里对经典通路进行检验，在GSEA上下载通路文件<code>.gmt</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./magma_v1.10_mac/magma --gene-results 02_gene_analysis.genes.raw \ </span><br><span class="line">--set-annot msigdb.v7.4.entrez.gmt \ </span><br><span class="line">--out 03_gene_set_analysis</span><br></pre></td></tr></table></figure>
+<p>输出<code>.gsa.out</code>文件，储存了如下信息：<br />
+<img src="16998556778767.jpg" alt="" /></p>
+<h2 id="参考"><a class="markdownIt-Anchor" href="#参考"></a> 参考</h2>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://ctg.cncr.nl/software/magma#">https://ctg.cncr.nl/software/magma#</a></li>
+<li><a target="_blank" rel="noopener" href="https://gwaslab.org/2021/12/13/magma/">https://gwaslab.org/2021/12/13/magma/</a></li>
+</ol>
+
+        
+      </div>
+
+         
     </div>
     
-    
-      
-      
-        
-        <div class="year-line">
-            <div class="year-num">2023</div>
-            <div class="dot-wrapper">
-                <div class="dot"></div>
-            </div>
-            <div class="article-count">9 篇文章</div>
-        </div>
-      
-      <a class="archive-article-link" href="/2023/10/16/seqkit_usage/" title="Seqkit Usage">
-        <div class="date">10-16</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    Seqkit Usage
-                
-            </div>
-        </div>
-        <div class="tags">
-            #软件使用
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2023/10/14/GlobusConnectUsage/" title="Globus Connect Usage">
-        <div class="date">10-14</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    Globus Connect Usage
-                
-            </div>
-        </div>
-        <div class="tags">
-            #软件使用
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2023/10/14/CodeReplication001/" title="CAD患者scATAC-seq数据复现">
-        <div class="date">10-14</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    CAD患者scATAC-seq数据复现
-                
-            </div>
-        </div>
-        <div class="tags">
-            #课题相关
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2023/10/14/JournalClub001/" title="Single-nucleus chromatin accessibility profiling highlights regulatory mechanisms of coronary artery disease risk">
-        <div class="date">10-14</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    Single-nucleus chromatin accessibility profiling highlights regulatory mechanisms of coronary artery disease risk
-                
-            </div>
-        </div>
-        <div class="tags">
-            #课题相关
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2023/10/13/EpgeneticsSession1/" title="表观遗传学与转录">
-        <div class="date">10-13</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    表观遗传学与转录
-                
-            </div>
-        </div>
-        <div class="tags">
-            #学习笔记
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2023/10/13/pearson_vs_spearman/" title="Pearson Correlation vs. Spearman Correlation">
-        <div class="date">10-13</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    Pearson Correlation vs. Spearman Correlation
-                
-            </div>
-        </div>
-        <div class="tags">
-            #学习笔记
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2023/10/13/insert_image_hexo/" title="Hexo中插入图片">
-        <div class="date">10-13</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    Hexo中插入图片
-                
-            </div>
-        </div>
-        <div class="tags">
-            #软件使用
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2023/10/13/deploy_hexo/" title="部署Hexo">
-        <div class="date">10-13</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    部署Hexo
-                
-            </div>
-        </div>
-        <div class="tags">
-            #软件使用
-        </div>
-      </a>
-    
-      
-      
-      <a class="archive-article-link" href="/2023/10/13/Preface/" title="Preface">
-        <div class="date">10-13</div>
-        <div class="line">
-            <div class="dot"></div>
-        </div>
-        <div class="title">
-            <div class="title-inner">
-                
-                    Preface
-                
-            </div>
-        </div>
-        <div class="tags">
-            #学习笔记
-        </div>
-      </a>
-    
+     
   </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left  disabled "
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/2023/11/09/cloudpan189-go_usage/"
+      title="天翼云盘命令行工具cloudpan189-go的使用"
+     >
+
+    <p class="title-text">
+      
+        天翼云盘命令行工具cloudpan189-go的使用
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+
+
+
     </div>
     <div id="footer-wrapper">
       <footer id="footer">
